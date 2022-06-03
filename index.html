@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta content="IE=edge"/>
+        <link rel="icon" href="SacyDay.jpg"/>
+        <title>Conversor de Moedas</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+        <main id="Inicio">
+            <h1>Conversor de Moedas</h1>
+            
+            <p id="dolarEspaco">
+                <div class="dolar">
+                    <label for="cotacaoDoDolar"> Insira a cotação do Dólar U$
+                        <input type="number" name="cotacaoDoDolar" id="CdD" class="input" step="0.01"  min="0.00"  max="9999999999.99" value="" required>
+                    </label>
+                </div>
+            </p>
+            
+            <p id="realEspaco">
+                <div class="real">
+                    <label for="valorEmReais">Insira o valor em Reais R$
+                        <input type="number" name="valorEmReais" id="VeR" class="input" step="0.01" min="0.00" max="9999999999.99" value="" required>
+                    </label><button type="submit" class="botao" id="btoCoverter" value="converter" onclick="converter()">Converter</button>
+                </div>
+            </p>
+
+            <div class="instrucao">
+                <p class="centro" id="aviso">Digite a cotação do U$, o valor em R$ <br>e depois clique em converter</p>
+            </div>
+
+            O valor convertido é U$ <span></span>
+
+        </main>
+    
+        <!-- JS Externo-->
+        <script src="script.js"></script>
+    </body>
+</html>
